@@ -6,13 +6,13 @@
 #    By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/15 17:38:19 by REDACTED          #+#    #+#              #
-#    Updated: 2018/09/18 02:17:04 by REDACTED         ###   ########.fr        #
+#    Updated: 2018/09/18 05:56:13 by REDACTED         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	SimpleGL
-CC				=	clang++ -std=c++11
-CFLAGS			=	-Wall -Wextra -Werror
+CC				=	g++ -std=c++11
+CFLAGS			=	-Wall -Wextra -Werror #-Wpadded
 
 INCLUDE			=	-I include \
 					-I /Users/REDACTED/.brew/Cellar/glfw/3.2.1/include \
