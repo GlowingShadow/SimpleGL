@@ -6,7 +6,7 @@
 #    By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/15 17:38:19 by REDACTED          #+#    #+#              #
-#    Updated: 2018/12/05 17:28:11 by REDACTED         ###   ########.fr        #
+#    Updated: 2019/03/19 15:42:00 by REDACTED         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ CC				=	g++ -std=c++11
 CFLAGS			=	-Wall -Wextra -Werror #-Wpadded
 
 INCLUDE			=	-I include \
+					-I src \
 					-I /Users/REDACTED/.brew/Cellar/glfw/3.2.1/include \
 					-I /Users/REDACTED/.brew/Cellar/glew/2.1.0/include 
 					#-I /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/
