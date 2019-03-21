@@ -6,7 +6,7 @@
 #    By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/15 17:38:19 by REDACTED          #+#    #+#              #
-#    Updated: 2019/03/20 19:12:16 by REDACTED         ###   ########.fr        #
+#    Updated: 2019/03/21 12:55:53 by REDACTED         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ GLEW			=	/Users/REDACTED/.brew/Cellar/glew/2.1.0/lib/libGLEW.2.1.dylib
 FRAMEWORKS		=	-framework OpenGL #-framework Cocoa
 CC_NEEDS		=	$(INCLUDE) $(FRAMEWORKS) $(GLFW) $(GLEW)
 
-SRC_FILE		=	main.cpp \
+SRC_FILE		=	main_ut.cpp \
 					unittests.cpp \
 					mathtests.cpp
 
@@ -76,4 +76,7 @@ pclean: fclean
 re: fclean all
 
 run: all
-	./$(NAME) ; echo $$?
+	@echo ""
+	./$(NAME)
+	@echo ""
+	@echo "exitcode: $$?"

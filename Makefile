@@ -6,7 +6,7 @@
 #    By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/15 17:38:19 by REDACTED          #+#    #+#              #
-#    Updated: 2019/03/20 17:29:22 by REDACTED         ###   ########.fr        #
+#    Updated: 2019/03/21 12:51:01 by REDACTED         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,7 +85,10 @@ pclean: fclean
 re: fclean all
 
 test:
-	make -f $(UT_MAKEFILE)
+	make run -f $(UT_MAKEFILE)
 
 run: all
-	./$(NAME) ; echo $$?
+	@echo ""
+	./$(NAME)
+	@echo ""
+	@echo "exitcode: $$?"
