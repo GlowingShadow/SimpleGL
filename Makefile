@@ -6,13 +6,14 @@
 #    By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/15 17:38:19 by REDACTED          #+#    #+#              #
-#    Updated: 2019/03/21 12:51:01 by REDACTED         ###   ########.fr        #
+#    Updated: 2019/03/28 16:00:51 by REDACTED         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	SimpleGL
 CC				=	g++ -std=c++11
 CFLAGS			=	-Wall -Wextra -Werror #-Wpadded
+TEST_FLAGS		=	-DUNIT_TESTS=true
 
 INCLUDE			=	-I include \
 					-I /Users/REDACTED/.brew/Cellar/glfw/3.2.1/include \
@@ -71,7 +72,7 @@ $(NAME): $(SRC) $(OBJ)
 	@# $(CC) $(CFLAGS) $(OBJ) -o $(NAME) $(LIBS) $(FRAMEWORKS) $(GLFW) $(GLEW)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp $(HDR) $(HDR_DIR)/%.hpp
-	$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+	$(CC) $(TEST_FLAGS) $(CFLAGS) $(INCLUDE) -c $< -o $@
 
 clean:
 	rm -rf $(OBJ_DIR)
