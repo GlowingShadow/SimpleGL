@@ -6,7 +6,7 @@
 /*   By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/18 22:45:30 by REDACTED          #+#    #+#             */
-/*   Updated: 2019/03/28 15:50:06 by REDACTED         ###   ########.fr       */
+/*   Updated: 2019/03/30 13:13:36 by REDACTED         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -395,7 +395,6 @@ void	scene1() {
 			// backObj = lamboPlus;
 		}
 	}
-
 
 	Cam		cam(glfw);
 	cam.local.centered = false;
