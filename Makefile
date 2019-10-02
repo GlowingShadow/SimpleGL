@@ -6,14 +6,14 @@
 #    By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/15 17:38:19 by REDACTED          #+#    #+#              #
-#    Updated: 2019/04/04 20:17:08 by REDACTED         ###   ########.fr        #
+#    Updated: 2019/10/02 17:15:57 by REDACTED         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	SimpleGL
+NAME			=	HumanGL
 CC				=	g++ -std=c++11
 CFLAGS			=	-Wall -Wextra -Werror #-Wpadded
-TEST_FLAGS		=	-DUNIT_TESTS=true
+TEST_FLAGS		=	-DUNIT_TESTS=false
 
 INCLUDE			=	-I include \
 					-I /Users/REDACTED/.brew/Cellar/glfw/3.2.1/include \
