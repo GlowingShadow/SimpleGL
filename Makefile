@@ -6,7 +6,7 @@
 #    By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/15 17:38:19 by REDACTED          #+#    #+#              #
-#    Updated: 2019/10/18 17:23:26 by REDACTED         ###   ########.fr        #
+#    Updated: 2019/11/15 10:45:55 by REDACTED         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,8 @@ SRC_FILE		=	main.cpp \
 					behavior.cpp \
 					behaviormanaged.cpp \
 					transformBH.cpp \
-					fps.cpp
+					fps.cpp \
+					gamemanager.cpp
 
 HDR_FILE		=	simplegl.h
 
