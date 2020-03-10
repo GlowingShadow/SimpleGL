@@ -6,7 +6,7 @@
 #    By: REDACTED <REDACTED@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/15 17:38:19 by REDACTED          #+#    #+#              #
-#    Updated: 2020/03/09 21:27:23 by REDACTED         ###   ########.fr        #
+#    Updated: 2020/03/10 02:30:42 by REDACTED         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,8 +50,8 @@ SRC_FILE		=	main.cpp \
 					fps.cpp \
 					gamemanager.cpp \
 					framebuffer.cpp \
-					uipanel.cpp \
-					quadtree.cpp
+					uipanel.cpp
+					# quadtree.cpp
 
 HDR_FILE		=	simplegl.h
 
